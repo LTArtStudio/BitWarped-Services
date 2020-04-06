@@ -1,0 +1,270 @@
+/* ................... Body ......................*/
+
+*{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  text-decoration: none;
+  list-style: none; 
+}
+body {font-family: montserrat;
+}
+/* ................... Logo......................*/
+label.logo{
+  line-height: 80px;
+  padding: 0 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 13%;
+}
+/* ................... NavBar......................*/
+nav{
+  background: #ffff;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  float: right;
+  margin-right: 10%;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #1d1d1b;
+  font-size:17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #1d1d1b;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{ display: none;
+}
+@media (max-width: 768px){
+  label.logo{  padding-left: 10px;}
+  nav ul li a{font-size: 16px;}
+}
+@media (max-width: 767px){
+  .checkbtn{display: block;}
+  ul{
+    position: fixed;
+    width: 80%;
+    height:100vh;
+    background: #a7c86f;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1; 
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{font-size: 20px;}
+  a:hover,a.active{background: none;color: #0082e6;
+  }
+  #check:checked ~ ul{left: 0;}
+}
+
+/* ......................Icon Wrapper........................*/
+
+.icon-wrapper {
+	position: relative;
+}
+.icon-wrapper img {
+	width: 100%;
+}
+.icon-wrapper .overlay-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icon-wrapper h1 {
+  margin: 0 0 0 0;
+  font-size: 32px;
+  color: #ffff;
+}
+.icon-wrapper p {
+  margin: 0 0 0 0;
+  font-size: 18px;
+  color: #ffff;
+}
+/* Desktop */
+@media all and (min-width:768px) {
+  .icon-wrapper h1 { font-size: 50px; margin-bottom: 20px;}
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+  .icon-wrapper h1 { font-size:12px; line-height: 1.1; width: 90%; margin: 1.5% auto;}
+}
+.icon-wrapper p { 
+  font-weight: normal;
+  text-transform: uppercase;  
+}
+/* Desktop */
+@media all and (min-width:768px) {
+  .icon-wrapper p { font-size: 32px; line-height: 1.6; margin-bottom: 3%;}
+}
+
+/* Mobiles */
+@media all and (max-width:767px) {
+  .icon-wrapper p { font-size: 8px;  margin-bottom: 5%; margin-left:10px; margin-right:10px;text-transform:none;  }
+}
+/* .......................End Icon Wrapper.....................*/
+
+/* ...........................wrapper..........................*/
+
+.image_full {
+  position: relative;
+  display:block;
+  width: 100%;
+  height: auto;
+  z-index: -1;  
+}
+
+ .image_mobile{
+  position: relative;
+  display:none;
+  width: 100%;
+  height: auto;
+  z-index: -1;  
+ }
+
+@media (max-width: 767px) and (min-width: 320px){
+  .image_full { display:none;}
+  .image_mobile {display:block;}
+}
+@media (max-width: 767px) and (min-width: 320px){
+  .image_full { display:none;}
+  .image_mobile {display:block;}
+}
+
+.wrapper-desktop h2 {
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 32px;
+  color: #1d1d1b;
+  text-align: center;
+
+}
+
+.wrapper-desktop p {
+  position: absolute;
+  margin: 0 0 0 0;
+  font-size: 32px;
+  color: #1d1d1b;
+  text-align: center;
+}
+
+/* Desktop */
+@media all and (min-width:768px) {
+ 	.wrapper-desktop h2 { font-size: 70px;  left:8%; bottom:40%; margin-bottom:0px; text-align: center;}}
+ 	/* Desktop */
+@media all and (min-width:768px) {
+	.wrapper-desktop p { font-size:40px; left:18%; bottom:20%;margin-left: 40px;margin-right: 40px;}}
+
+
+/* Mobiles */
+@media all and (max-width:767px) {
+	.wrapper-desktop h2 { font-size: 16px;left:5%; bottom:73%;text-transform: uppercase;color:#1d1d1b;}}
+/* Mobiles */
+@media all and (max-width:767px) {
+ 	.wrapper-desktop p { font-size: 14px;bottom: 62%; text-transform:none;margin-left: 15px;margin-right: 15px; }}
+
+/* ...................End Image Wrapper.....................*/
+
+/* .........................Footer..........................*/
+
+.footer {
+  position: relative;
+  margin:0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background-color: #1d1d1b;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.smal-line{
+  width: 100%;
+  height: 1px;
+  background-color: #b1d099;
+  margin-bottom: 50px;
+}
+
+.footer-top h1{
+  font-size: 10px;
+  text-align: center;
+  color: #92999f;
+ }
+  .footer-top p{
+  font-size: 8px;
+  text-align: center;
+  color: #92999f;
+ }
+
+ .footer-bottom p{
+  font-size: 10px;
+  color: #92999f;
+ }
+  .footer-bottom a{
+  font-size: 8px;
+  color: #92999f;
+ }
+/* .........................line..........................*/
+ .smal-line{
+ 	display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b1d099;
+  margin-bottom: 50px;
+}
+/* Desktop */
+@media all and (min-width:768px) {
+  .smal-line{ width: 100%;height: 1px;background-color: #b1d099;margin-bottom: 50px;}
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+  .smal-line{ width: 100%;height: 1px;background-color: #b1d099;margin-bottom: 10px;}
+}
+/* ........................End Line.........................*/
+
+/* Desktop */
+@media all and (min-width:768px) {
+  .footer-bottom p {font-size: 18px;color: #92999f;margin-left: 0;display: inline;padding-bottom: 20px;}
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+ .footer-bottom  p { font-size: 10px;color: #92999f;text-align: center;}
+}
+/* Desktop */
+@media all and (min-width:768px) {
+ .footer-bottom  a{color:#92999f;font-size:14px;display: inline;padding-left: 30px;padding-bottom: 30px;}
+}
+/* Mobiles */
+@media all and (max-width:767px) {
+ .footer-bottom  a{cursor: pointer;font-size: 8px;color: #92999f;text-align: center;}
+}
+
+/* .......................End Footer.......................*/
